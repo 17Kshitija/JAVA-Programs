@@ -1,0 +1,357 @@
+{\rtf1\ansi\ansicpg1252\deff0\nouicompat\deflang1033{\fonttbl{\f0\fnil\fcharset0 Times New Roman;}{\f1\fnil Consolas;}{\f2\fnil\fcharset0 Calibri;}}
+{\colortbl ;\red127\green0\blue85;\red0\green0\blue0;\red106\green62\blue62;\red0\green0\blue192;\red42\green0\blue255;\red63\green127\blue95;\red127\green159\blue191;}
+{\*\generator Riched20 10.0.19041}\viewkind4\uc1 
+\pard\sa200\sl276\slmult1\f0\fs28\lang9 /1.Write a Java program to perform basic Calculator operations.\par
+\cf1\b\f1\fs20 package\cf2\b0  com.test;\cf0\par
+\par
+\cf1\b import\cf2\b0  java.util.Scanner;\cf0\par
+\par
+\par
+\cf1\b public\cf2\b0  \cf1\b class\cf2\b0  Operation \{\cf0\par
+\cf2\tab\cf0\par
+\cf2\tab\cf1\b public\cf2\b0  \cf1\b int\cf2\b0  addition(\cf1\b int\cf2\b0  \cf3 a\cf2 , \cf1\b int\cf2\b0  \cf3 b\cf2 ) \{\cf0\par
+\cf2\tab\tab\cf1\b int\cf2\b0  \cf3 add\cf2 =\cf3 a\cf2 +\cf3 b\cf2 ;\cf0\par
+\cf2\tab\tab\cf1\b return\cf2\b0  \cf3 add\cf2 ;\cf0\par
+\cf2\tab\tab\cf0\par
+\cf2\tab\}\cf0\par
+\cf2\tab\cf1\b public\cf2\b0  \cf1\b int\cf2\b0  substraction(\cf1\b int\cf2\b0  \cf3 a\cf2 , \cf1\b int\cf2\b0  \cf3 b\cf2 ) \{\cf0\par
+\cf2\tab\tab\cf1\b int\cf2\b0  \cf3 sub\cf2 =\cf3 a\cf2 -\cf3 b\cf2 ;\cf0\par
+\cf2\tab\tab\cf1\b return\cf2\b0  \cf3 sub\cf2 ;\cf0\par
+\cf2\tab\}\cf0\par
+\cf2\tab\cf1\b public\cf2\b0  \cf1\b int\cf2\b0  multiplication(\cf1\b int\cf2\b0  \cf3 a\cf2 , \cf1\b int\cf2\b0  \cf3 b\cf2 ) \{\cf0\par
+\cf2\tab\tab\cf1\b int\cf2\b0  \cf3 mul\cf2 =\cf3 a\cf2 *\cf3 b\cf2 ;\cf0\par
+\cf2\tab\tab\cf1\b return\cf2\b0  \cf3 mul\cf2 ;\cf0\par
+\cf2\tab\}\cf0\par
+\cf2\tab\cf1\b public\cf2\b0  \cf1\b int\cf2\b0  division(\cf1\b int\cf2\b0  \cf3 a\cf2 , \cf1\b int\cf2\b0  \cf3 b\cf2 ) \{\cf0\par
+\cf2\tab\tab\cf1\b int\cf2\b0  \cf3 div\cf2 =\cf3 a\cf2 /\cf3 b\cf2 ;\cf0\par
+\cf2\tab\tab\cf1\b return\cf2\b0  \cf3 div\cf2 ;\cf0\par
+\cf2\tab\}\cf0\par
+\cf2\tab\cf0\par
+\cf2\tab\cf0\par
+\cf2\tab\cf1\b public\cf2\b0  \cf1\b static\cf2\b0  \cf1\b void\cf2\b0  main(String[] \cf3 args\cf2 ) \{\cf0\par
+\cf2\tab\tab Scanner \cf3\ul sc\cf2\ulnone =\cf1\b new\cf2\b0  Scanner(System.\cf4\b\i in\cf2\b0\i0 );\cf0\par
+\cf2\tab\tab System.\cf4\b\i out\cf2\b0\i0 .println(\cf5 "Enter the first number -"\cf2  );\cf0\par
+\cf2\tab\tab\cf1\b int\cf2\b0  \cf3 a\cf2 =\cf3 sc\cf2 .nextInt();\cf0\par
+\cf2\tab\tab System.\cf4\b\i out\cf2\b0\i0 .println(\cf5 "Enter the Second number -"\cf2 );\cf0\par
+\cf2\tab\tab\cf1\b int\cf2\b0  \cf3 b\cf2 =\cf3 sc\cf2 .nextInt();\cf0\par
+\cf2\tab\tab\cf0\par
+\cf2\tab\tab Operation \cf3 operation\cf2 =\cf1\b new\cf2\b0  Operation();\cf0\par
+\cf2\tab\tab\cf1\b int\cf2\b0  \cf3 num1\cf2 =\cf3 operation\cf2 .addition(\cf3 a\cf2 , \cf3 b\cf2 );\cf0\par
+\cf2\tab\tab\cf1\b int\cf2\b0  \cf3 num2\cf2 =\cf3 operation\cf2 .substraction(\cf3 a\cf2 , \cf3 b\cf2 );\cf0\par
+\cf2\tab\tab\cf1\b int\cf2\b0  \cf3 num3\cf2 =\cf3 operation\cf2 .multiplication(\cf3 a\cf2 , \cf3 b\cf2 );\cf0\par
+\cf2\tab\tab\cf1\b int\cf2\b0  \cf3 num4\cf2 =\cf3 operation\cf2 .division(\cf3 a\cf2 , \cf3 b\cf2 );\cf0\par
+\cf2\tab\tab\cf0\par
+\cf2\tab\tab System.\cf4\b\i out\cf2\b0\i0 .println(\cf5 " The addition is :"\cf2  +\cf3 num1\cf2 );\cf0\par
+\cf2\tab\tab System.\cf4\b\i out\cf2\b0\i0 .println(\cf5 " The substraction is :"\cf2  +\cf3 num2\cf2 );\cf0\par
+\cf2\tab\tab System.\cf4\b\i out\cf2\b0\i0 .println(\cf5 " The multiplication is :"\cf2  +\cf3 num3\cf2 );\cf0\par
+\cf2\tab\tab System.\cf4\b\i out\cf2\b0\i0 .println(\cf5 " The division is :"\cf2  +\cf3 num4\cf2 );\cf0\par
+\cf2\tab\tab\cf0\par
+\cf2\tab\tab\cf0\par
+\cf2\tab\}\cf0\par
+\cf2\tab\cf0\par
+\cf2\tab\cf0\par
+\par
+\cf2\}\cf0\par
+\f0\fs28\par
+/2.Write a Java program to calculate Fibonacci Series up to n numbers.\par
+\cf1\b\f1\fs20 package\cf2\b0  com.example;\cf0\par
+\par
+\cf1\b import\cf2\b0  java.util.Scanner;\cf0\par
+\par
+\cf1\b public\cf2\b0  \cf1\b class\cf2\b0  Fabonacci \{\cf0\par
+\cf2\tab\cf0\par
+\cf2\tab  \cf0\par
+\cf2\tab\cf0\par
+\cf2\tab\cf1\b public\cf2\b0  \cf1\b static\cf2\b0  \cf1\b void\cf2\b0  main(String[] \cf3 args\cf2 ) \{\cf0\par
+\cf2\tab\tab\cf1\b int\cf2\b0  \cf3 n1\cf2 =0;\cf0\par
+\cf2\tab\tab\cf1\b int\cf2\b0  \cf3 n2\cf2 =1;\cf0\par
+\cf2\tab\tab\cf1\b int\cf2\b0  \cf3 res\cf2 =0;\cf0\par
+\cf2\tab\tab\cf1\b int\cf2\b0  \cf3 i\cf2 =0;\cf0\par
+\cf2\tab\tab Scanner \cf3\ul sc\cf2\ulnone =\cf1\b new\cf2\b0  Scanner(System.\cf4\b\i in\cf2\b0\i0 );\cf0\par
+\cf2\tab\tab System.\cf4\b\i out\cf2\b0\i0 .println(\cf5 "Enter the number :"\cf2 );\cf0\par
+\cf2\tab     \cf1\b int\cf2\b0  \cf3 n\cf2 =\cf3 sc\cf2 .nextInt();\cf0\par
+\cf2\tab     System.\cf4\b\i out\cf2\b0\i0 .println(\cf5 "Number in series are:"\cf2  +\cf3 n1\cf2 );\cf0\par
+\cf2\tab     System.\cf4\b\i out\cf2\b0\i0 .println(\cf5 "Number in series are:"\cf2  +\cf3 n2\cf2 );\cf0\par
+\cf2\tab     \cf1\b while\cf2\b0 (\cf3 i\cf2 <=\cf3 n\cf2 ) \{\cf0\par
+\cf2\tab     \tab\cf3 res\cf2 =\cf3 n1\cf2 +\cf3 n2\cf2 ;\cf0\par
+\cf2\tab     \tab\cf3 n1\cf2 =\cf3 n2\cf2 ;\cf0\par
+\cf2\tab     \tab\cf3 n2\cf2 =\cf3 res\cf2 ;\cf0\par
+\cf2\tab     \tab\cf3 i\cf2 ++;\cf0\par
+\cf2\tab     \tab  System.\cf4\b\i out\cf2\b0\i0 .println(\cf5 "Number in series are:"\cf2  +\cf3 res\cf2 );\cf0\par
+\cf2\tab     \tab\cf0\par
+\cf2\tab     \}\cf0\par
+\cf2\tab     \cf0\par
+\cf2\tab\}\cf0\par
+\par
+\cf2\}\cf0\par
+\f0\fs28\par
+/3.Write a Java program to calculate a Factorial of a number.\par
+\cf1\b\f1\fs20 package\cf2\b0  com.test;\cf0\par
+\par
+\cf1\b import\cf2\b0  java.util.Scanner;\cf0\par
+\par
+\cf1\b public\cf2\b0  \cf1\b class\cf2\b0  Factorial \{\cf0\par
+\cf2\tab\cf0\par
+\cf2\tab\cf0\par
+\cf2\tab\cf1\b public\cf2\b0  \cf1\b static\cf2\b0  \cf1\b void\cf2\b0  main(String[] \cf3 args\cf2 ) \{\cf0\par
+\cf2\tab\tab\cf0\par
+\cf2\tab\tab\cf1\b int\cf2\b0  \cf3 fact\cf2 =1;\cf0\par
+\cf2\tab\tab\cf1\b int\cf2\b0  \cf3 i\cf2 =0;\cf0\par
+\cf2\tab\tab Scanner \cf3\ul sc\cf2\ulnone =\cf1\b new\cf2\b0  Scanner(System.\cf4\b\i in\cf2\b0\i0 );\cf0\par
+\cf2\tab\tab System.\cf4\b\i out\cf2\b0\i0 .println(\cf5 "Enter the number :"\cf2 );\cf0\par
+\cf2\tab\tab\cf1\b int\cf2\b0  \cf3 n\cf2 =\cf3 sc\cf2 .nextInt();\cf0\par
+\cf2\tab\tab\cf1\b for\cf2\b0 (\cf3 i\cf2 =1;\cf3 i\cf2 <=\cf3 n\cf2 ;\cf3 i\cf2 ++) \{\cf0\par
+\cf2\tab\tab\cf0\par
+\cf2\tab\tab\tab\cf3 fact\cf2 =\cf3 fact\cf2 *\cf3 i\cf2 ;\cf0\par
+\cf2\tab\tab\tab\cf0\par
+\cf2\tab\tab\tab\cf0\par
+\cf2\tab\tab\}\cf0\par
+\cf2\tab\tab System.\cf4\b\i out\cf2\b0\i0 .println(\cf5 "The factorial of number is :"\cf2  +\cf3 fact\cf2 );\cf0\par
+\cf2\tab\}\cf0\par
+\par
+\cf2\}\cf0\par
+\f0\fs28\par
+/4.Write a Java program to find out whether the given String is \par
+Palindrome or not.\par
+import java.util.Scanner;\par
+import java.io.*;\par
+import java.lang.*;\par
+\par
+public class Palindrome \{\par
+\tab\par
+\tab public static void main(String[] args) \{\par
+\tab\tab Scanner sc=new Scanner(System.in);\par
+\tab\tab\par
+\tab\tab StringBuilder input=new StringBuilder();\par
+\tab\tab\par
+\tab\tab StringBuilder t=input.append(sc.next());\par
+\tab     System.out.println(t);\par
+\tab     \par
+\tab     StringBuilder s=t.reverse();\par
+\tab     System.out.println(s);\par
+\tab     \par
+\tab     if(s.compareTo(t)==0) \{\par
+\tab     \tab System.out.println("Palindrome");\par
+\tab     \}\par
+\tab     else \{\par
+\tab     \tab System.out.println("Not Palindrome");\par
+\tab     \}\par
+\tab\}\par
+\par
+\}\par
+5.Write a Java program to calculate Permutation and Combination of 2 numbers.\par
+package SimpleNumberPrograms;\par
+\par
+import java.util.Scanner;\par
+\par
+public class Permutations \{\par
+\par
+\tab private static Scanner sc;\par
+\tab\par
+\tab public static void main(String[] args) \{\par
+\tab\tab\par
+\tab\tab sc = new Scanner(System.in);\par
+\tab\tab int n, r, NCR, NPR;\par
+\tab\tab\par
+\tab\tab System.out.print("Please Enter n Value = ");\par
+\tab\tab n = sc.nextInt();\par
+\tab\tab System.out.print("Please Enter r Value = ");\par
+\tab\tab r = sc.nextInt();\par
+\tab\tab\par
+\tab\tab NCR = fact(n)/(fact(n - r) * fact(r));\par
+\tab\tab NPR = fact(n)/fact(n - r);\par
+\tab\tab\par
+\tab\tab System.out.println("NCR Value = " + NCR);\par
+\tab\tab System.out.println("NPR Value = " + NPR);\par
+\tab\}\par
+\tab\par
+\tab public static int fact(int number) \{\par
+\tab\tab if(number == 0 || number == 1) \{\par
+\tab\tab\tab return 1;\par
+\tab\tab\}\par
+\tab\tab else \{\par
+\tab\tab\tab return number * fact(number - 1);\par
+\tab\tab\}\par
+\tab\}\par
+\}\par
+6.Write a program in Java to print Diamond Pattern.\par
+\cf1\b\f1\fs20 import\cf2\b0  java.util.Scanner;\cf0\par
+\par
+\cf1\b public\cf2\b0  \cf1\b class\cf2\b0  Pattern \{\cf0\par
+\par
+\cf2\tab\cf1\b public\cf2\b0  \cf1\b static\cf2\b0  \cf1\b void\cf2\b0  main(String[] \cf3 args\cf2 ) \{\cf0\par
+\cf2\tab\tab Scanner \cf3\ul sc\cf2\ulnone =\cf1\b new\cf2\b0  Scanner(System.\cf4\b\i in\cf2\b0\i0 );\cf0\par
+\cf2\tab\tab\cf1\b int\cf2\b0  \cf3 n\cf2 =\cf3 sc\cf2 .nextInt();\cf0\par
+\cf2\tab\tab\cf0\par
+\cf2\tab\tab\cf1\b for\cf2\b0 (\cf1\b int\cf2\b0  \cf3 i\cf2 =1;\cf3 i\cf2 <\cf3 n\cf2 ;\cf3 i\cf2 ++) \{\cf0\par
+\cf2\tab\tab\tab\cf0\par
+\cf2\tab\tab\tab\cf1\b for\cf2\b0 (\cf1\b int\cf2\b0  \cf3 j\cf2 =\cf3 i\cf2 ;\cf3 j\cf2 <=\cf3 n\cf2 ;\cf3 j\cf2 ++) \{\cf0\par
+\cf2\tab\tab\tab\tab System.\cf4\b\i out\cf2\b0\i0 .print(\cf5 "  "\cf2 );\cf0\par
+\cf2\tab\tab\tab\tab\cf0\par
+\cf2\tab\tab\tab\}\cf0\par
+\cf2\tab\tab\tab\cf0\par
+\cf2\tab\tab\tab\cf1\b for\cf2\b0 (\cf1\b int\cf2\b0  \cf3 j\cf2 =1;\cf3 j\cf2 <\cf3 i\cf2 ;\cf3 j\cf2 ++) \{\cf0\par
+\cf2\tab\tab\tab\tab System.\cf4\b\i out\cf2\b0\i0 .print(\cf5 "* "\cf2 );\cf0\par
+\cf2\tab\tab\tab\}\cf0\par
+\cf2\tab\tab\tab\cf0\par
+\cf2\tab\tab\tab\cf1\b for\cf2\b0 (\cf1\b int\cf2\b0  \cf3 j\cf2 =1;\cf3 j\cf2 <=\cf3 i\cf2 ;\cf3 j\cf2 ++) \{\cf0\par
+\cf2\tab\tab\tab\tab System.\cf4\b\i out\cf2\b0\i0 .print(\cf5 "* "\cf2 );\cf0\par
+\cf2\tab\tab\tab\}\cf0\par
+\cf2\tab\tab\tab\cf0\par
+\cf2\tab\tab\tab System.\cf4\b\i out\cf2\b0\i0 .println();\cf0\par
+\cf2\tab\tab\}\cf0\par
+\cf2\tab\tab\cf1\b for\cf2\b0 (\cf1\b int\cf2\b0  \cf3 i\cf2 =1;\cf3 i\cf2 <=\cf3 n\cf2 ;\cf3 i\cf2 ++) \{\cf0\par
+\cf2\tab\tab\tab\cf0\par
+\cf2\tab\tab\tab\cf1\b for\cf2\b0 (\cf1\b int\cf2\b0  \cf3 j\cf2 =1;\cf3 j\cf2 <=\cf3 i\cf2 ;\cf3 j\cf2 ++) \{\cf0\par
+\cf2\tab\tab\tab\tab System.\cf4\b\i out\cf2\b0\i0 .print(\cf5 "  "\cf2 );\cf0\par
+\cf2\tab\tab\tab\}\cf0\par
+\cf2\tab\tab\tab\cf0\par
+\cf2\tab\tab\tab\cf1\b for\cf2\b0 (\cf1\b int\cf2\b0  \cf3 j\cf2 =\cf3 i\cf2 ;\cf3 j\cf2 <\cf3 n\cf2 ;\cf3 j\cf2 ++) \{\cf0\par
+\cf2\tab\tab\tab\tab System.\cf4\b\i out\cf2\b0\i0 .print(\cf5 "* "\cf2 );\cf0\par
+\cf2\tab\tab\tab\}\cf0\par
+\cf2\tab\tab\tab\cf0\par
+\cf2\tab\tab\tab\cf1\b for\cf2\b0 (\cf1\b int\cf2\b0  \cf3 j\cf2 =\cf3 i\cf2 ;\cf3 j\cf2 <=\cf3 n\cf2 ;\cf3 j\cf2 ++) \{\cf0\par
+\cf2\tab\tab\tab\tab System.\cf4\b\i out\cf2\b0\i0 .print(\cf5 "* "\cf2 );\cf0\par
+\cf2\tab\tab\tab\}\cf0\par
+\cf2\tab\tab\tab\cf0\par
+\cf2\tab\tab\tab System.\cf4\b\i out\cf2\b0\i0 .println();\cf0\par
+\cf2\tab\tab\}\cf0\par
+\cf2\tab\}\cf0\par
+\cf2\tab\cf0\par
+\cf2\}\cf0\par
+\f0\fs28\par
+\par
+7.Write a Java Program to reverse the letters present in the given String.\par
+\cf1\b\f1\fs20 import\cf2\b0  java.util.Scanner;\cf0\par
+\par
+\cf1\b public\cf2\b0  \cf1\b class\cf2\b0  Reverse \{\cf0\par
+\par
+\cf2\tab\cf1\b public\cf2\b0  \cf1\b static\cf2\b0  \cf1\b void\cf2\b0  main(String[] \cf3 args\cf2 ) \{\cf0\par
+\cf2\tab\tab\cf6 // \cf7\b TODO\cf6\b0  Auto-generated method stub\cf0\par
+\cf2          Scanner \cf3\ul sc\cf2\ulnone =\cf1\b new\cf2\b0  Scanner(System.\cf4\b\i in\cf2\b0\i0 );\cf0\par
+\cf2          String \cf3 text\cf2 =\cf3 sc\cf2 .nextLine();\cf0\par
+\cf2          \cf1\b char\cf2\b0  [] \cf3 character\cf2 =\cf3 text\cf2 .toCharArray(); \cf0\par
+\cf2          \cf1\b for\cf2\b0 (\cf1\b int\cf2\b0  \cf3 i\cf2 =\cf3 character\cf2 .\cf4 length\cf2 -1;\cf3 i\cf2 >=0;\cf3 i\cf2 --) \{\cf0\par
+\cf2         \tab  System.\cf4\b\i out\cf2\b0\i0 .print(\cf3 character\cf2 [\cf3 i\cf2 ]);\cf0\par
+\cf2          \}\cf0\par
+\cf2\tab\}\cf0\par
+\par
+\cf2\}\cf0\f0\fs28\par
+8.Write a Java Program to check whether the given array is Mirror Inverse or not.\par
+\cf1\b\f1\fs20 import\cf2\b0  java.util.Scanner;\cf0\par
+\par
+\cf1\b public\cf2\b0  \cf1\b class\cf2\b0  Inverse \{\cf0\par
+\par
+\cf2\tab\cf1\b public\cf2\b0  \cf1\b static\cf2\b0  \cf1\b void\cf2\b0  main(String[] \cf3 args\cf2 ) \{\cf0\par
+\cf2\tab\tab Scanner \cf3\ul sc\cf2\ulnone =\cf1\b new\cf2\b0  Scanner(System.\cf4\b\i in\cf2\b0\i0 );\cf0\par
+\cf2\tab\tab\cf1\b int\cf2\b0  \cf3 num\cf2 =\cf3 sc\cf2 .nextInt();\cf0\par
+\cf2\tab\tab\cf1\b int\cf2\b0 [] \cf3 arr\cf2 =\cf1\b new\cf2\b0  \cf1\b int\cf2\b0 [\cf3 num\cf2 ];\cf0\par
+\cf2\tab\tab\cf1\b int\cf2\b0  \cf3 t\cf2 =0;\cf0\par
+\cf2\tab\tab\cf1\b int\cf2\b0  \cf3 k\cf2 =0;\cf0\par
+\cf2\tab\tab\cf0\par
+\cf2\tab\tab\cf0\par
+\cf2\tab\tab\cf1\b for\cf2\b0 (\cf1\b int\cf2\b0  \cf3 i\cf2 =0 ;\cf3 i\cf2 <\cf3 num\cf2  ;\cf3 i\cf2 ++) \{\cf0\par
+\cf2\tab\tab\tab\cf3 arr\cf2 [\cf3 i\cf2 ]=\cf3 sc\cf2 .nextInt();\cf0\par
+\cf2\tab\tab\tab\cf0\par
+\cf2\tab\tab\}\cf0\par
+\cf2\tab\tab\cf1\b for\cf2\b0 (\cf1\b int\cf2\b0  \cf3 i\cf2 =0 ;\cf3 i\cf2 <\cf3 num\cf2  ;\cf3 i\cf2 ++) \{\cf0\par
+\cf2\tab\tab\tab\cf6 //System.out.print(\ul arr\ulnone [i]+ "  ");\cf0\par
+\cf2\tab\tab\tab\cf3 t\cf2 =\cf3 arr\cf2 [\cf3 i\cf2 ];\cf0\par
+\cf2\tab\tab\tab System.\cf4\b\i out\cf2\b0\i0 .print(\cf3 t\cf2 + \cf5 "  "\cf2 );\cf0\par
+\cf2\tab\tab\tab\cf0\par
+\cf2\tab\tab\}\cf0\par
+\cf2\tab\cf0\par
+\cf2\tab\tab\cf1\b int\cf2\b0  \cf3 inver\cf2 ;\cf0\par
+\cf2\tab\tab\cf1\b int\cf2\b0  \cf3 start\cf2 =0;\cf0\par
+\cf2\tab\tab\cf1\b int\cf2\b0  \cf3 end\cf2 =\cf3 num\cf2 -1;\cf0\par
+\cf2\tab\tab\cf1\b while\cf2\b0 (\cf3 start\cf2 <\cf3 end\cf2 ) \{\cf0\par
+\cf2\tab\tab\tab\cf3 inver\cf2 =\cf3 arr\cf2 [\cf3 start\cf2 ];\cf0\par
+\cf2\tab\tab\tab\cf3 arr\cf2 [\cf3 start\cf2 ]=\cf3 arr\cf2 [\cf3 end\cf2 ];\cf0\par
+\cf2\tab\tab\tab\cf3 arr\cf2 [\cf3 end\cf2 ]=\cf3 inver\cf2 ;\cf0\par
+\cf2\tab\tab\tab\cf0\par
+\cf2\tab\tab\tab\cf3 start\cf2 ++;\cf0\par
+\cf2\tab\tab\tab\cf3 end\cf2 --;\cf0\par
+\cf2\tab\tab\}\cf0\par
+\cf2\tab\cf0\par
+\cf2\tab\tab System.\cf4\b\i out\cf2\b0\i0 .println();\cf0\par
+\cf2\tab\tab\cf1\b for\cf2\b0 (\cf1\b int\cf2\b0  \cf3 j\cf2 =0;\cf3 j\cf2 <\cf3 num\cf2 ;\cf3 j\cf2 ++) \{\cf0\par
+\cf2\tab\tab\tab\cf6 //System.out.print(\ul arr\ulnone [j]+ "  ");\cf0\par
+\cf2\tab\tab\tab\cf3 k\cf2 =\cf3 arr\cf2 [\cf3 j\cf2 ];\cf0\par
+\cf2\tab\tab\tab System.\cf4\b\i out\cf2\b0\i0 .print(\cf3 k\cf2 + \cf5 "  "\cf2 );\cf0\par
+\cf2\tab\tab\}\cf0\par
+\cf2\tab\tab System.\cf4\b\i out\cf2\b0\i0 .println();\cf0\par
+\cf2\tab\tab\cf1\b if\cf2\b0 (\cf3 k\cf2 ==\cf3 t\cf2 ) \{\cf0\par
+\cf2\tab\tab\tab System.\cf4\b\i out\cf2\b0\i0 .println(\cf5 "Inverse"\cf2 );\cf0\par
+\cf2\tab\tab\}\cf0\par
+\cf2\tab\tab\cf1\b else\cf2\b0  \{\cf0\par
+\cf2\tab\tab\tab System.\cf4\b\i out\cf2\b0\i0 .println(\cf5 "Not Inverse"\cf2 );\cf0\par
+\cf2\tab\tab\}\cf0\par
+\cf2\tab\}\cf0\par
+\cf2\}\cf0\par
+\f0\fs28\par
+9.Write a Java program to remove elements from an ArrayList\par
+import java.util.ArrayList;\par
+import java.util.Scanner;\par
+\par
+public class Arrayli \{\par
+\par
+\tab public static void main(String[] args) \{\par
+\tab\tab Scanner sc=new Scanner(System.in);\par
+\tab\tab int n =sc.nextInt();\par
+\tab\tab ArrayList<Integer> arr=new ArrayList<Integer>(n);\par
+\tab\tab\par
+\tab\tab for(int i=0;i<n;i++) \{\par
+\tab\tab\tab arr.add(i);\par
+\tab\tab\}\par
+\tab\tab System.out.println(arr);\par
+\tab\tab arr.remove(3);\par
+\tab\tab System.out.println(arr);\par
+\tab\}\par
+\}\par
+10.Write a Java Program to find the Transpose of a given Matrix.\par
+\cf1\b\f1\fs20 import\cf2\b0  java.util.Scanner;\cf0\par
+\par
+\cf1\b public\cf2\b0  \cf1\b class\cf2\b0  Matrix \{\cf0\par
+\par
+\cf2\tab\cf1\b public\cf2\b0  \cf1\b static\cf2\b0  \cf1\b void\cf2\b0  main(String[] \cf3 args\cf2 ) \{\cf0\par
+\cf2\tab\tab Scanner \cf3\ul sc\cf2\ulnone =\cf1\b new\cf2\b0  Scanner(System.\cf4\b\i in\cf2\b0\i0 );\cf0\par
+\cf2\tab\tab System.\cf4\b\i out\cf2\b0\i0 .println(\cf5 "Enter the number of rows:"\cf2 );\cf0\par
+\cf2\tab\tab\cf1\b int\cf2\b0  \cf3 rows\cf2 =\cf3 sc\cf2 .nextInt();\cf0\par
+\cf2\tab\tab System.\cf4\b\i out\cf2\b0\i0 .println(\cf5 "Enter the number of coloumn:"\cf2 );\cf0\par
+\cf2\tab\tab\cf1\b int\cf2\b0  \cf3 col\cf2 =\cf3 sc\cf2 .nextInt();\cf0\par
+\cf2\tab\tab\cf0\par
+\cf2\tab\tab\cf1\b int\cf2\b0 [][] \cf3 mat\cf2 =\cf1\b new\cf2\b0  \cf1\b int\cf2\b0 [\cf3 rows\cf2 ][\cf3 col\cf2 ];\cf0\par
+\cf2\tab\tab\cf0\par
+\cf2\tab\tab\cf1\b for\cf2\b0 (\cf1\b int\cf2\b0  \cf3 i\cf2 =0;\cf3 i\cf2 <\cf3 rows\cf2 ;\cf3 i\cf2 ++) \{\cf0\par
+\cf2\tab\tab\tab\cf0\par
+\cf2\tab\tab\tab\cf1\b for\cf2\b0 (\cf1\b int\cf2\b0  \cf3 j\cf2 =0;\cf3 j\cf2 <\cf3 col\cf2 ;\cf3 j\cf2 ++) \{\cf0\par
+\cf2\tab\tab\tab\tab\cf3 mat\cf2 [\cf3 i\cf2 ][\cf3 j\cf2 ]=\cf3 sc\cf2 .nextInt();\cf0\par
+\cf2\tab\tab\tab\}\cf0\par
+\cf2\tab\tab\}\cf0\par
+\cf2\tab\cf0\par
+\cf2             \cf1\b for\cf2\b0 (\cf1\b int\cf2\b0  \cf3 i\cf2 =0;\cf3 i\cf2 <\cf3 rows\cf2 ;\cf3 i\cf2 ++) \{\cf0\par
+\cf2\tab\tab\tab\cf0\par
+\cf2\tab\tab\tab\cf1\b for\cf2\b0 (\cf1\b int\cf2\b0  \cf3 j\cf2 =0;\cf3 j\cf2 <\cf3 col\cf2 ;\cf3 j\cf2 ++) \{\cf0\par
+\cf2\tab\tab\tab\tab System.\cf4\b\i out\cf2\b0\i0 .print(\cf3 mat\cf2 [\cf3 i\cf2 ][\cf3 j\cf2 ]+ \cf5 " "\cf2 );\cf0\par
+\cf2\tab\tab\tab\tab\cf0\par
+\cf2\tab\tab\tab\}\cf0\par
+\cf2\tab\tab\cf0\par
+\cf2\tab\tab\tab\cf0\par
+\cf2\tab\tab\tab System.\cf4\b\i out\cf2\b0\i0 .println();\cf0\par
+\cf2          \}\cf0\par
+\cf2\tab\cf0\par
+\cf2             System.\cf4\b\i out\cf2\b0\i0 .println(\cf5 "The transpose of given matrix is:"\cf2 );\cf0\par
+\cf2           \cf1\b for\cf2\b0 (\cf1\b int\cf2\b0  \cf3 i\cf2 =0;\cf3 i\cf2 <\cf3 col\cf2 ;\cf3 i\cf2 ++) \{\cf0\par
+\cf2         \tab   \cf0\par
+\cf2         \tab   \cf1\b for\cf2\b0 (\cf1\b int\cf2\b0  \cf3 j\cf2 =0;\cf3 j\cf2 <\cf3 rows\cf2 ;\cf3 j\cf2 ++) \{\cf0\par
+\cf2         \tab\tab   \cf0\par
+\cf2         \tab\tab   System.\cf4\b\i out\cf2\b0\i0 .print( \cf3 mat\cf2 [\cf3 j\cf2 ][\cf3 i\cf2 ]+ \cf5 " "\cf2 );\cf0\par
+\cf2         \tab   \}\cf0\par
+\cf2         \tab   System.\cf4\b\i out\cf2\b0\i0 .println();\cf0\par
+\cf2           \}\cf0\par
+\cf2\tab\}\cf0\par
+\cf2\}\cf0\par
+\f0\fs28\par
+\f2\fs22\par
+}
+ 
